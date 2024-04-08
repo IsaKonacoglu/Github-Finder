@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-bg-dark" id="body">
+
+    <!-- top-area -->
+    <header class="navbar navbar-dark mt-3 mb-3">
+        <div class="container">
+            <p class="navbar-brand" id="title">Github Finder</p>  
+            <button class="btn btn-light" id="btn-dark">Light Mode</button>
+        </div>
+    </header>
+
+    <!-- notification-area-->
+    <div class="container" id="warning"></div>
+
+    <!-- form-area -->
+    <form class="container">
+        <div class="border border-dark-subtle p-3 rounded-3">
+            <h1>Github Kullanıcı Adını Ara</h1>
+            <p>Kullanıcı bilgilerine ulaşmak için kullanıcı adı giriniz.</p>
+            <div class="d-flex gap-3" >
+                <input type="search" class="form-control" id="search-input">
+                <button class="btn btn-primary btn-lg" id="search-btn">Ara</button>
+                <button class="btn btn-danger btn-lg" id="btnClear">Temizle</button> 
+            </div>
+        </div>
+    </form>
+
+    <!-- user-info -->
+    <div class="container p-4" id="profile">
+       <!-- <div class="row border p-4 my-4 rounded-3">
+            <div class="col-md-3">
+                <img src="https://avatars.githubusercontent.com/u/114363718?v=4" alt=""
+                class="img-fluid rounded shadow">
+                <a href="" class="btn btn-primary w-100 mt-4">Profili Göster</a>
+            </div>
+            <div class="col-md-9 gap-3" id="profileButton">
+                <span class="badge fs-6 bg-primary">Açık Repolar:255</span>
+                <span class="badge fs-6 bg-secondary">Açık Gistler:9</span>
+                <span class="badge fs-6 bg-success">Takipçiler:221</span>
+                <span class="badge fs-6 bg-info">Takip Edilenler:198</span>
+
+                <ul class="list-group mt-3">
+                    <li class="list-group-item">Hakkinda: A software company</li>
+                    <li class="list-group-item">Şirket: null</li> 
+                    <li class="list-group-item">Web site: udemig.com</li> 
+                    <li class="list-group-item">Konum: Sweden</li>
+                    <li class="list-group-item">Hesap Oluşturma: 11.10.2022</li>
+                </ul>
+            </div>  
+        </div>  -->      
+    </div>
+
+    <!-- user-project-area -->
+    <div class="container p-4" id="repos">
+        <div class="border row p-3">
+            <div class="col-6">
+                <a href="" target="_blank">Repolar</a>
+            </div>
+            <div class="col-6">                
+                <span class="badge bg-primary">Yıldız:0</span>
+                <span class="badge bg-secondary">Fork:0</span>
+                <span class="badge bg-success">İzleyenler:0</span>
+            </div>
+        </div>
+    </div>
+    <!-- js-file -->
+    <script src="app.js" type="module"></script>
+</body>
+</html>
